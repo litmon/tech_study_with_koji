@@ -1,0 +1,150 @@
+html{
+    background-color: rgb(224, 201, 190);
+}
+
+body {
+    min-height: 100%;   
+    color: #000000;
+    background-color: rgb(224, 201, 190);
+}
+
+img.ballImg{
+    float:right;
+    margin:15px;
+    margin-top:-10px;
+}
+
+p {
+    margin:5px;
+}
+
+#page {
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    background-color:#ffffff;
+}
+
+#main {
+    margin-top: 10px;
+    margin-left: 5px;
+    padding-top:85px;
+    padding-left: 0;
+    overflow: hidden;
+    min-height: 400px;  
+}
+
+#main #containerLeft {
+    width: 460px;
+    float: left;
+}
+
+#main #containerRight {
+    width: 460px;
+    float: right;
+}
+footer p{
+    margin: 0;
+}
+
+footer {
+    border-top:1px solid #000;
+    clear:both;
+    margin-top: 20px;
+    margin-right: 5px;
+    text-align: center;
+    font-size: small;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+footer p{
+    margin: 0;
+}
+
+/* メインタイトル */
+#title {
+    overflow: hidden;
+    margin: 0;
+    border-top: 2px solid #F28100;
+}
+#title h1 {
+    padding: 0;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#title h1 a {
+    display: block;
+    background: url('images/title.png') no-repeat scroll 0% 0% transparent;
+    width: 946px;
+    height: 90px;
+    margin-left: 85px;
+    margin-right:auto; 
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+#title2{
+    text-align: center;
+    font-size: 32px;
+    margin:10px;
+    margin-left: auto;
+    margin-right:auto;
+    display: none;
+}
+
+@media print{
+#title h1 a {
+    display: none;
+}
+
+#title2{
+    display: inline;
+    text-align: center;
+    font-size: 32px;
+    margin:10px;
+    margin-left: 300px;
+}
+
+}
+
+#main li {
+    list-style-image: url("images/list1.png");
+}
+
+#main #whatsNew h2 { 
+    background: url('images/whatsNew.png') no-repeat scroll 0% 0% transparent;
+    width: 131px;
+    height: 40px;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin: 0;
+}
+
+#main li {
+    list-style-image: url("images/list1.png");
+    margin:10px;
+    margin-left: 160px;
+    font-size: 18px
+}
+
+#main h1 {
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#main h2 {
+    font-size: 18px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#main p {
+    font-size: 16px;
+    margin-left: 150px;
+    margin-right: 150px;
+}

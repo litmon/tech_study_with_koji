@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>山岡研究室</title>
+
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.14.0/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.14.0/build/cssbase/cssbase-min.css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.14.0/build/cssfonts/cssfonts-min.css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.14.0/build/cssgrids/cssgrids-min.css">
+
+    <link rel="stylesheet" href="font.css" type="text/css"> 
+    <link rel="stylesheet" href="nav.css" type="text/css"> 
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+
+<script type="text/javascript">
+<!--
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshowe IMG:first');
+
+    $active.addClass('last-active');
+        
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+function first() {
+    setInterval( "slideSwitch()", 5000 );
+}
+-->
+</script>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<style>
+
+.misc1 {
+  float: left;
+  width: 30%;
+}
+
+.misc2 {
+  float: left;
+  width: 38%;
+  padding-right:2%;
+}
+
+.misc3 {
+  float: left;
+  width: 30%;
+}
+
+#slideshow {
+    margin-top:50px;
+    position:relative;
+    height:260px;
+}
+
+#slideshow img {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+}
+
+#slideshow img.active {
+    z-index:10;
+}
+
+#slideshow img.last-active {
+    z-index:9;
+}
+
+</style>
+</head>
+
+<body onLoad="first()">
+  <div id="page">
+    <header >
+      <nav id="global">
+  <ul>
+    <li><a href="map.html">アクセス</a></li>
+    <li><a href="#">English Page</a></li>
+  </ul>
+      </nav> <!-- global -->
+
+      <div id="title">
+        <h1><a href="index.html">山岡研究室</a></h1>
+      </div> <!-- title -->
+      <div id="title2">
+        山岡研究室
+      </div>
+
+      <nav id="menu">
+        <ul>
+          <li id="firstmenu"><a href="index.html">Top</a></li>
+          <li><a href="message.html">Message</a></li>
+          <li><a href="introduction.html">Introduction</a></li>
+          <li><a href="research.html">Research Field</a></li>
+          <li id="lastmenu"><a href="member.html">Lab Member</a></li>
+        </ul>
+      </nav> <!-- menu -->
+
+    <div id="slideshow"><!-- <div id="slideshow"> -->
+  <img src="images/lab1.jpg" width="950" height="350" class="active" alt=""/>
+  <img src="images/lab2.jpg" width="950" height="350" alt="" />
+  <img src="images/honkan.jpg" width="950" height="350" alt="" />
+  <img src="images/lab1.jpg" width="950" height="350" alt="" />
+  <img src="images/lab2.jpg" width="950" height="350" alt="" />
+  <img src="images/honkan.jpg" width="950" height="350" alt="" />
+    </div> <!-- topImage -->
+    </header>
+	
+    <div id="main">
+      <h1 style="margin-bottom:25px;">はじめに</h1>
+      <p style="font-size:18px;margin-left:130px;">此方は東京工業大学大学院 山岡研究室のホームページです。</p>
+      
+        <ul style="margin-top:25px;">
+          <li style="margin-left:150px"><a href="index.html">TOP</a>: このページ</li>
+          <li style="margin-left:150px"><a href="message.html">Message</a>： 教授からのメッセージ</li>
+          <li style="margin-left:150px"><a href="introduction.html">Introduction</a>： 教授紹介</li>
+          <li style="margin-left:150px"><a href="research.html">Research Field</a>: 研究分野</li>
+          <li style="margin-left:150px"><a href="member.html">Lab Member</a>: 研究室メンバー</li>
+        </ul>
+      
+    </div> <!-- main -->
+
+    <footer>
+      <p>Last updated: 2014-01-08</p>
+      <p>Copyright (C) Department of Human System Science Yamaoka Lab. All rights reserved.</p>
+    </footer>
+  </div> <!-- page -->
+</body>
+      
+
+</html>
